@@ -1,31 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | [Blogr]</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script type="text/javascript">
-  //   module.exports = {
-  //     theme: {
-  //       borderRadius: {
-  //         'none': '0',
-  //         'sm': '0.125rem',
-  //         DEFAULT: '0.25rem',
-  //         DEFAULT: '4px',
-  //         'md': '0.375rem',
-  //         'lg': '0.5rem',
-  //         'full': '9999px',
-  //         'large': '110px',
-  //       }
-  //     }
-  // }
-  </script>
+
   <style type="text/tailwindcss">
     @layer utilities {
       .img-bg-header {
@@ -71,14 +55,29 @@
         background-position: -210px center ,0 0;
         background-size: 56%;
        }
+    
+
+
+
+
+
+       
+       .section-container {
+        @apply max-w-screen-2xl m-auto h-auto bg-white;
+       }
+       .header-init {
+        @apply w-full h-auto bg-red-400 pt-5 img-bg-header rounded-bl-[90px] md:img-bg-header-desktop;
+       }
     }
+
+
   </style>
 </head>
 <body class="bg-[#999] font-serif">
   
-    <section class="max-w-screen-2xl m-auto h-auto bg-white">
+    <section class="section-container">
     <!-- header -->
-      <header class="w-full h-auto bg-red-400 pt-5 img-bg-header rounded-bl-[90px] md:img-bg-header-desktop">
+      <header class="header-init">
         <header class="w-full h-14 px-3 md:flex lg:w-8/12 lg:m-auto xl:w-8/12 xl:m-auto">
           <div class="w-full flex justify-between items-center md:flex md:justify-start">
             <img src="./images/logo.svg">
